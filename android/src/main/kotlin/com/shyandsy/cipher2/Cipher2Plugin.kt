@@ -10,7 +10,7 @@ import javax.crypto.spec.GCMParameterSpec
 import javax.crypto.spec.IvParameterSpec
 import javax.crypto.spec.SecretKeySpec
 import java.security.SecureRandom
-import java.util.Base64
+import android.util.Base64
 
 class Cipher2Plugin: MethodCallHandler {
   @JvmField val NONCE_LENGTH_IN_BYTES = 12
@@ -89,7 +89,7 @@ class Cipher2Plugin: MethodCallHandler {
 
     val ciphertext = cipher.doFinal(dataArray)
 
-    val text = Base64.getEncoder().encodeToString(ciphertext)
+    val text = Base64.encodeToString(ciphertext, Base64.NO_WRAP)
 
     result.success(text) 
 
@@ -125,7 +125,7 @@ class Cipher2Plugin: MethodCallHandler {
     var dataArray:ByteArray; // = ByteArray(0)
   
     try{
-        dataArray = Base64.getDecoder().decode(data.toByteArray(CHARSET))
+        dataArray = Base64.decode(data.toByteArray(CHARSET), Base64.DEFAULT)
         if(dataArray.size % 16 != 0){
           throw IllegalArgumentException("")
         }
@@ -162,7 +162,7 @@ class Cipher2Plugin: MethodCallHandler {
     val secureRandom = SecureRandom()
     val nance = ByteArray(NONCE_LENGTH_IN_BYTES)
     secureRandom.nextBytes(nance)
-    val text = Base64.getEncoder().encodeToString(nance)
+    val text = Base64.encodeToString(nance, Base64.NO_WRAP)
     result.success(text)
 
     return
@@ -189,7 +189,7 @@ class Cipher2Plugin: MethodCallHandler {
     // decode nonce from base64 string 
     var nonceArray:ByteArray;
     try{
-      nonceArray = Base64.getDecoder().decode(nonce.toByteArray(CHARSET))
+      nonceArray = Base64.decode(nonce.toByteArray(CHARSET), Base64.DEFAULT)
     }catch (e: IllegalArgumentException) {
       result.error(
         "ERROR_INVALID_KEY_OR_IV_LENGTH",
@@ -216,7 +216,7 @@ class Cipher2Plugin: MethodCallHandler {
 
     val ciphertext = cipher.doFinal(dataArray)
 
-    val text = Base64.getEncoder().encodeToString(ciphertext)
+    val text = Base64.encodeToString(ciphertext, Base64.NO_WRAP)
 
     result.success(text) 
 
@@ -245,7 +245,7 @@ class Cipher2Plugin: MethodCallHandler {
 
     // deocde the base64 string to get nonce byte array
     try{
-      nonceArray = Base64.getDecoder().decode(nonce.toByteArray(CHARSET))
+      nonceArray = Base64.decode(nonce.toByteArray(CHARSET), Base64.DEFAULT)
     }catch (e: IllegalArgumentException) {
       result.error(
         "ERROR_INVALID_KEY_OR_IV_LENGTH",
@@ -257,7 +257,7 @@ class Cipher2Plugin: MethodCallHandler {
 
     // decode the base64 string to get the data byte array
     try{
-        dataArray = Base64.getDecoder().decode(data.toByteArray(CHARSET))
+        dataArray = Base64.decode(data.toByteArray(CHARSET), Base64.DEFAULT)
     }catch (e: IllegalArgumentException) {
       result.error(
         "ERROR_INVALID_ENCRYPTED_DATA",
