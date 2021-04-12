@@ -1,11 +1,11 @@
 name: cipher2
 description: A flutter plugin project for encryption and decrytion which support both ios and android.
-version: 0.3.4
+version: 1.0.0
 author: shyandsy <shyandsy@gmail.com>
 homepage: https://github.com/shyandsy/cipher2
 
 environment:
-  sdk: ">=2.0.0-dev.68.0 <3.0.0"
+  sdk: '>=2.12.0 <3.0.0'
 
 dependencies:
   flutter:
@@ -14,7 +14,7 @@ dependencies:
 dev_dependencies:
   flutter_test:
     sdk: flutter
-  test: ^1.5.1
+  test: ^1.16.5
 
 # For information on the generic Dart part of this file, see the
 # following page: https://www.dartlang.org/tools/pub/pubspec
