@@ -15,7 +15,7 @@ A new flutter plugin project.
   s.source_files = 'Classes/**/*'
   s.public_header_files = 'Classes/**/*.h'
   s.dependency 'Flutter'
-  s.dependency 'CryptoSwift', '~> 0.13.1'
+  s.dependency 'CryptoSwift', '~> 1.4.0'
   
   s.ios.deployment_target = '8.0'
 end
