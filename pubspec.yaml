@@ -1,6 +1,6 @@
 name: cipher2
 description: A flutter plugin project for encryption and decrytion which support both ios and android.
-version: 1.0.0
+version: 1.0.1
 author: shyandsy <shyandsy@gmail.com>
 homepage: https://github.com/shyandsy/cipher2
 

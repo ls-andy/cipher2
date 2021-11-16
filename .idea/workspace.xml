@@ -1,5 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="NONE" />
+  </component>
   <component name="BranchesTreeState">
     <expand>
       <path>
@@ -20,20 +23,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b9093de8-5748-4b53-9730-318068734bc9" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/example/.flutter-plugins-dependencies" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/example/ios/Flutter/flutter_export_environment.sh" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Dart_SDK.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Dart_SDK.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/example/android/app/src/main/kotlin/com/shyandsy/cipher2example/EmbeddingV1Activity.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/android/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/src/main/kotlin/com/shyandsy/cipher2/Cipher2Plugin.kt" beforeDir="false" afterPath="$PROJECT_DIR$/android/src/main/kotlin/com/shyandsy/cipher2/Cipher2Plugin.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/.flutter-plugins-dependencies" beforeDir="false" afterPath="$PROJECT_DIR$/example/.flutter-plugins-dependencies" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/example/android/app/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/example/android/app/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/example/android/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/example/android/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/example/android/gradle.properties" beforeDir="false" afterPath="$PROJECT_DIR$/example/android/gradle.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/example/android/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" afterPath="$PROJECT_DIR$/example/android/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/example/lib/main.dart" beforeDir="false" afterPath="$PROJECT_DIR$/example/lib/main.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/example/pubspec.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/example/pubspec.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/cipher2.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/cipher2.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/android/app/src/main/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/example/android/app/src/main/AndroidManifest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/android/app/src/main/kotlin/com/shyandsy/cipher2example/MainActivity.kt" beforeDir="false" afterPath="$PROJECT_DIR$/example/android/app/src/main/kotlin/com/shyandsy/cipher2example/MainActivity.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/ios/Flutter/flutter_export_environment.sh" beforeDir="false" afterPath="$PROJECT_DIR$/example/ios/Flutter/flutter_export_environment.sh" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pubspec.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/pubspec.yaml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -41,6 +39,7 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="device_and_snapshot_combo_box_target[/Users/s/.android/avd/Galaxy_Nexus_API_30.avd]" />
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
@@ -72,6 +71,7 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="show.migrate.to.gradle.popup" value="false" />
   </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -102,31 +102,6 @@
         </entry>
       </map>
     </option>
-  </component>
-  <component name="WindowStateProjectService">
-    <state width="1878" height="291" key="GridCell.Tab.0.bottom" timestamp="1618215362521">
-      <screen x="1440" y="25" width="1920" height="1055" />
-    </state>
-    <state width="1878" height="291" key="GridCell.Tab.0.bottom/46.25.1394.875/1440.25.1920.1055@1440.25.1920.1055" timestamp="1618215362521" />
-    <state width="1878" height="291" key="GridCell.Tab.0.center" timestamp="1618215362520">
-      <screen x="1440" y="25" width="1920" height="1055" />
-    </state>
-    <state width="1878" height="291" key="GridCell.Tab.0.center/46.25.1394.875/1440.25.1920.1055@1440.25.1920.1055" timestamp="1618215362520" />
-    <state width="1878" height="291" key="GridCell.Tab.0.left" timestamp="1618215362519">
-      <screen x="1440" y="25" width="1920" height="1055" />
-    </state>
-    <state width="1878" height="291" key="GridCell.Tab.0.left/46.25.1394.875/1440.25.1920.1055@1440.25.1920.1055" timestamp="1618215362519" />
-    <state width="1878" height="291" key="GridCell.Tab.0.right" timestamp="1618215362520">
-      <screen x="1440" y="25" width="1920" height="1055" />
-    </state>
-    <state width="1878" height="291" key="GridCell.Tab.0.right/46.25.1394.875/1440.25.1920.1055@1440.25.1920.1055" timestamp="1618215362520" />
-    <state x="2092" y="307" width="615" height="490" key="find.popup" timestamp="1618215139459">
-      <screen x="1440" y="25" width="1920" height="1055" />
-    </state>
-    <state x="2092" y="307" width="615" height="490" key="find.popup/46.25.1394.875/1440.25.1920.1055@1440.25.1920.1055" timestamp="1618215139459" />
-    <state x="2065" y="259" width="670" height="676" key="search.everywhere.popup" timestamp="1618214129531">
-      <screen x="1440" y="25" width="1920" height="1055" />
-    </state>
-    <state x="2065" y="259" width="670" height="676" key="search.everywhere.popup/46.25.1394.875/1440.25.1920.1055@1440.25.1920.1055" timestamp="1618214129531" />
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
 </project>
